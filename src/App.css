@@ -1,0 +1,54 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.drum-pads {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
+.drum-pad {
+  height: 100px;
+  width: 100px;
+  border: 1px black solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  transition: all 0.1s ease-in-out;
+}
+
+.drum-pad:hover {
+  opacity: 0.7;
+}
+
+.drum-pad:active,
+.drum-pad.playing {
+  transform: scale(0.92, 0.93);
+  background-color: #434242;
+}
+
+#display {
+  width: 200px;
+  height: 50px;
+  padding: 10px;
+  margin: 20px 50px;
+  border: 1px black solid;
+  border-radius: 10px;
+  background-color: #434242;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.volume {
+  width: 300px;
+  color: #434242;
+}
